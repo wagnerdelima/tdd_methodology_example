@@ -15,3 +15,10 @@ def test_add_many_numbers():
 
     res = c.add(*numbers)
     assert res == 4950
+
+
+def test_subtract_two_numbers():
+    c = Calc()
+
+    res = c.sub(9, 5)
+    assert res == 4
