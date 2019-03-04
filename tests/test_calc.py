@@ -22,3 +22,19 @@ def test_subtract_two_numbers():
 
     res = c.sub(9, 5)
     assert res == 4
+
+
+def test_mul_two_numbers():
+    c = Calc()
+
+    res = c.mul(2, 4)
+    assert res == 8
+
+
+def test_mul_many_numbers():
+    numbers = range(1, 10)
+
+    c = Calc()
+
+    res = c.mul(*numbers)
+    assert res == 362880
